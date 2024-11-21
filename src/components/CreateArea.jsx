@@ -19,6 +19,9 @@ function CreateArea(props) {
         [name]: value,
       };
     });
+  }
+
+  function handleClick() {
     setIsActive(true);
   }
 
@@ -45,6 +48,7 @@ function CreateArea(props) {
         />) : null}
 
         <textarea
+        onClick={handleClick}
           onChange={handleChange}
           name="content"
           placeholder="Take a note..."
